@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        text-align: center;
+        padding: 50px;
+        transition: background-color 1s ease;
+      }
+      h1 {
+        color: #333;
+      }
+      p {
+        color: #666;
+      }
+      .colorChange {
+        height: 20px;
+        width: 150px;
+      }
+    </style>
+    <title>Change Background Color</title>
+  </head>
+  <body>
+    <h1>Background Color Changer</h1>
+    <button class="colorChange" onclick="changeBackgroundColor()">
+      Colour Change
+    </button>
+  </body>
+
+  <script>
+    function changeBackgroundColor() {
+      r1 = Math.trunc(Math.random() * 255);
+      r2 = Math.trunc(Math.random() * 255);
+      r3 = Math.trunc(Math.random() * 255);
+      document.body.style.backgroundColor = `rgb(${r1},${r2},${r3})`;
+    }
+  </script>
+</html>
